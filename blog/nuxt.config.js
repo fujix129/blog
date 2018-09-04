@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   plugins: [
-    { src: '~/plugins/axios', ssr: false },
+      { src: '~/plugins/axios', ssr: false },
   ],
   head: {
     title: 'blog',
@@ -39,10 +39,16 @@ module.exports = {
     }
   },
 
+  modules: ['@nuxtjs/axios'],
+
   axios: {
     baseURL: 'http://api.minamihyou.com:3000/',
     timeout: 3000,
-    headers: { 'Content-Type': 'application/json' }
+    headers: {
+      'Content-Type': 'application/json',
+      "Access-Control-Allow-Origin": "*"
+    }
+
     // proxyHeaders: false
   }
 }

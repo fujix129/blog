@@ -3,7 +3,7 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        blog
+        {{ info.title }}
       </h1>
       <h2 class="subtitle">
         Nuxt.js project
@@ -18,6 +18,20 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
+  },
+  computed: {
+    info() {
+      return this.$store.getters['info/info']
+    }
+  },
+  created: function() {
+    this.getInfo()
+  },
+  methods: {
+    getInfo() {
+      console.log("check get Info")
+      this.$store.dispatch('info/get')
+    }
   }
 }
 </script>
@@ -46,9 +60,5 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
