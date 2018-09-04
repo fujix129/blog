@@ -2,6 +2,9 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  plugins: [
+    { src: '~/plugins/axios', ssr: false },
+  ],
   head: {
     title: 'blog',
     meta: [
@@ -34,6 +37,12 @@ module.exports = {
         })
       }
     }
+  },
+
+  axios: {
+    baseURL: 'http://api.minamihyou.com:3000/',
+    timeout: 3000,
+    headers: { 'Content-Type': 'application/json' }
+    // proxyHeaders: false
   }
 }
-
