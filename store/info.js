@@ -6,7 +6,6 @@ export const state = () => ({
 
 export const mutations = {
   setInfos(state, info) {
-    console.log(info, "setInfo")
     state.info = {
       title: info[0].title
     }
@@ -22,13 +21,10 @@ export const actions = {
     await this.$axios
       .get('/infos')
       .then(response => {
-        console.log(response, "response")
         // context.dispatch('status/success', {}, { root: true }) //別storeアクセス用メモ
         context.dispatch('getInfoSuccess', response)
       })
-      .catch(() => {
-        console.log("disabled")
-      })
+      .catch(() => {})
   },
 
   getInfoSuccess(context, response) {

@@ -29,7 +29,6 @@ export default {
   },
   methods: {
     getInfo() {
-      console.log("check get Info")
       this.$store.dispatch('info/get')
     }
   }
