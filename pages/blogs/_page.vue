@@ -1,27 +1,17 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
-      <h1 class="title">
-        {{ info.title }}
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
+      <h2>{{ pages.title }}</h2>
+      <p>{{ pages.text }}</p>
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
 export default {
-  components: {
-    AppLogo
-  },
   computed: {
-    info() {
-      return this.$store.getters['info/info']
+    pages() {
+      return this.$store.getters['pages/pages']
     }
   },
   created: function() {
@@ -29,7 +19,7 @@ export default {
   },
   methods: {
     getInfo() {
-      this.$store.dispatch('info/get')
+      this.$store.dispatch('pages/get', this.$route.params.page)
     }
   }
 }
