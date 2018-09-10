@@ -1,38 +1,17 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
       <h1 class="title">
-        {{ info.title }}
+        トップページ
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        現在工事中
       </h2>
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
-export default {
-  components: {
-    AppLogo
-  },
-  computed: {
-    info() {
-      return this.$store.getters['info/info']
-    }
-  },
-  created: function() {
-    this.getInfo()
-  },
-  methods: {
-    getInfo() {
-      this.$store.dispatch('info/get')
-    }
-  }
-}
 </script>
 
 <style>
