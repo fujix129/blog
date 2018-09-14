@@ -26,7 +26,7 @@ export default {
 .header {
   height: 100px;
   padding: 30px;
-  background-color: #0bc20b;
+  background-color: #73d9f7;
   box-shadow: 0 5px 4px gray;
 }
 
