@@ -16,19 +16,23 @@
     <div class="MenuContainer">
       <h2>月毎の記事</h2>
     </div>
+    <div class="MenuContainer Twitter">
+      <Twitter />
+    </div>
   </div>
 </template>
 
+<script>
+import Twitter from '~/components/Twitter.vue'
+
+export default {
+  components: {
+    Twitter
+  }
+}
+</script>
+
 <style scoped>
-.Menu {
-  float: right;
-  width: 20%;
-}
-.MenuContainer {
-  width: 80%;
-  margin: 10% 10% 30% 10%;
-  padding-top: 10%;
-}
 h2 {
   border-top: solid 1px #cccccc;
   border-bottom: solid 1px #cccccc;
@@ -44,5 +48,17 @@ dt {
 dd {
   float:left;
   width:70%;
+}
+.Menu {
+  float: right;
+  width: 25%;
+}
+.MenuContainer {
+  width: 80%;
+  margin: 10% 10% 30% 10%;
+  padding-top: 10%;
+}
+.Twitter {
+  height: 50%;
 }
 </style>
