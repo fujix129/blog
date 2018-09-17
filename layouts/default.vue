@@ -1,8 +1,12 @@
 <template>
   <div>
     <Header />
-    <Menu />
-    <nuxt/>
+    <div class="menu">
+      <Menu />
+    </div>
+    <div class="container">
+      <nuxt/>
+    </div>
   </div>
 </template>
 
@@ -26,5 +30,16 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.container {
+  padding: 30px;
+  width: 75%;
+}
+
+.menu {
+  float: right;
+  min-width: 300px;
+  max-width: 300px;
 }
 </style>

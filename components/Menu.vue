@@ -1,5 +1,5 @@
 <template>
-  <div class="Menu">
+  <div>
 
     <div class="MenuContainer">
       <h2>プロフィール</h2>
@@ -64,10 +64,7 @@ dd {
 p {
   font-size: 12px;
 }
-.Menu {
-  float: right;
-  width: 25%;
-}
+
 .MenuContainer {
   width: 80%;
   margin: 10% 10% 10% 10%;
