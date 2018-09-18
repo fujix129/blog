@@ -1,9 +1,10 @@
 <template>
-  <section class="container">
-    <div>
-      <h2>{{ pages.title }}</h2>
+  <section>
+    <h2>{{ pages.title }}</h2>
+    <div class="container">
       <p>{{ pages.text }}</p>
     </div>
+    <p class="date">{{ pages.created_at }}</p>
   </section>
 </template>
 
@@ -26,4 +27,14 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.date {
+  font-size: 15px;
+  text-align: right;
+}
 </style>

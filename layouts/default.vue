@@ -1,11 +1,13 @@
 <template>
   <div>
     <Header />
-    <div class="menu">
-      <Menu />
-    </div>
-    <div class="container">
-      <nuxt/>
+    <div class="body">
+      <div class="container">
+        <nuxt/>
+      </div>
+      <div class="menu">
+        <Menu />
+      </div>
     </div>
   </div>
 </template>
@@ -32,14 +34,19 @@ html {
   margin: 0;
 }
 
-.container {
+.body {
   padding: 30px;
-  width: 75%;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 30px;
+  width: 740px;
 }
 
 .menu {
-  float: right;
-  min-width: 300px;
-  max-width: 300px;
+  width: 400px;
 }
 </style>
