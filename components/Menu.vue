@@ -16,7 +16,11 @@
 
     <div class="MenuContainer">
       <h2>最近の。</h2>
-      <nuxt-link to="/blogs/hajimete_blog">初めてのブログ</nuxt-link>
+      <ul id="example-1">
+        <li v-for="page in menuPages">
+          <nuxt-link :to="{path:`/blogs/${page.url_title}`}">{{ page.title }}</nuxt-link>
+        </li>
+      </ul>
     </div>
 
     <div class="MenuContainer">
@@ -40,6 +44,19 @@ import Twitter from '~/components/Twitter.vue'
 export default {
   components: {
     Twitter
+  },
+  computed: {
+    menuPages() {
+      return this.$store.getters['pages/menuPages']
+    }
+  },
+  created: function() {
+    this.getInfo()
+  },
+  methods: {
+    getInfo() {
+      this.$store.dispatch('pages/getAll', this.$route.params.page)
+    }
   }
 }
 </script>
