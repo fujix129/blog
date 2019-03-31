@@ -42,8 +42,8 @@ module.exports = {
   modules: ['@nuxtjs/axios'],
 
   axios: {
-    // baseURL: 'http://api.minamihyou.com:3000/', //本番用
-    baseURL: 'http://localhost:3001/', //開発用
+    baseURL: 'http://api.minamihyou.com:3000/', //本番用
+    // baseURL: 'http://localhost:3001/', //開発用
     timeout: 3000,
     headers: {
       'Content-Type': 'application/json',
