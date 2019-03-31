@@ -5,7 +5,7 @@
         トップページ
       </h1>
       <h2 class="subtitle">
-        現在工事中
+        現在工事中です
       </h2>
     </div>
   </section>
@@ -14,12 +14,8 @@
 <script>
 </script>
 
-<style>
+<style scoped>
 .container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 

@@ -16,7 +16,7 @@
 
     <div class="MenuContainer">
       <h2>最近の。</h2>
-      <p>直近の記事</p>
+      <nuxt-link to="/blogs/hajimete_blog">初めてのブログ</nuxt-link>
     </div>
 
     <div class="MenuContainer">
@@ -55,11 +55,11 @@ dl {
 dt {
   float:left;
   clear:left;
-  width:30%;
+  width:20%;
 }
 dd {
   float:left;
-  width:70%;
+  width:65%;
 }
 p {
   font-size: 12px;
@@ -68,7 +68,7 @@ p {
 .MenuContainer {
   width: 80%;
   margin: 10% 10% 10% 10%;
-  padding-top: 20px;
+  padding: 10px;
   border: solid 1px #cccccc;
   border-radius: 10px;
 }

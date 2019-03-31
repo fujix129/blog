@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <p class="title">{{ info.title }}</p>
+    <nuxt-link to="/">{{ info.title }}</nuxt-link>
   </div>
 </template>
 
