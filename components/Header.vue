@@ -1,6 +1,8 @@
 <template>
   <div class="header">
-    <nuxt-link to="/">{{ info.title }}</nuxt-link>
+    <nuxt-link to="/">
+      <img src="~/assets/logo.png" class="logo" />
+    </nuxt-link>
   </div>
 </template>
 
@@ -25,12 +27,16 @@ export default {
 <style scoped>
 .header {
   height: 100px;
-  padding: 30px;
+  padding: 10px;
   background-color: #73d9f7;
   box-shadow: 0 5px 4px gray;
 }
 
+.logo {
+  height: 80px;
+}
+
 .title {
-  font-size: 30px;
+  font-size: 50px;
 }
 </style>
