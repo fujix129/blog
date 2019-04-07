@@ -3,8 +3,7 @@
 
     <div class="MenuContainer">
       <h2>プロフィール</h2>
-      <p>きなこさんの画像入れる予定</p>
-      <!-- APIから取得するようにしたい -->
+        <img src="~/assets/kinaco.png" class="logo" />
       <dl>
         <dt>なまえ</dt><dd>fujix(hyoufk)</dd>
         <dt>twitter</dt><dd><a href="https://twitter.com/hyoufk">@hyoufk</a></dd>
@@ -80,6 +79,11 @@ dd {
 }
 p {
   font-size: 12px;
+}
+
+.logo {
+  width: 80%;
+  border-radius: 30px;
 }
 
 .MenuContainer {
