@@ -16,8 +16,8 @@
     <div class="MenuContainer">
       <h2>最近の。</h2>
       <ul id="example-1">
-        <li v-for="page in menuPages">
-          <nuxt-link :to="{path:`/blogs/${page.url_title}`}">{{ page.title }}</nuxt-link>
+        <li v-for="n in 5">
+          <nuxt-link :to="{path:`/blogs/${menuPages[n - 1].url_title}`}">{{ menuPages[n - 1].text }}</nuxt-link>
         </li>
       </ul>
     </div>
