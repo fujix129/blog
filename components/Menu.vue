@@ -16,7 +16,7 @@
     <div class="MenuContainer">
       <h2>最近の。</h2>
       <ul id="example-1">
-        <li v-for="n in 5">
+        <li v-for="n in menuPageCounts()">
           <nuxt-link :to="{path:`/blogs/${menuPages[n - 1].url_title}`}">{{ menuPages[n - 1].text }}</nuxt-link>
         </li>
       </ul>
@@ -55,6 +55,13 @@ export default {
   methods: {
     getInfo() {
       this.$store.dispatch('pages/getAll', this.$route.params.page)
+    },
+    menuPageCounts() {
+      if (this.$store.getters['pages/menuPages'].length >= 5) {
+        return 5
+      }
+
+      return this.$store.getters['pages/menuPages'].length
     }
   }
 }
