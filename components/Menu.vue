@@ -17,7 +17,7 @@
       <h2>最近の。</h2>
       <ul id="example-1">
         <li v-for="n in menuPageCounts()">
-          <nuxt-link :to="{path:`/blogs/${menuPages[n - 1].url_title}`}">{{ menuPages[n - 1].text }}</nuxt-link>
+          <nuxt-link :to="{path:`/blogs/${menuPages[n - 1].url_title}`}">{{ menuPages[n - 1].title }}</nuxt-link>
         </li>
       </ul>
     </div>

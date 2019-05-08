@@ -27,12 +27,10 @@ export const state = () => ({
 
 export const mutations = {
   setMenus(state, pages) {
-    console.log("menuPages");
     state.menuPages = pages
   },
 
   setInfos(state, pages) {
-    console.log(pages);
     state.pages = pages
   }
 }

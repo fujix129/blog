@@ -2,7 +2,7 @@
   <section>
     <h2>{{ pages.title }}</h2>
     <div class="container">
-      <p>{{ pages.text }}</p>
+      <div v-html="pages.text"></div>
     </div>
     <p class="date">{{ pages.created_at }}</p>
   </section>
