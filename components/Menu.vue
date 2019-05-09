@@ -9,7 +9,7 @@
         <dt>twitter</dt><dd><a href="https://twitter.com/hyoufk">@hyoufk</a></dd>
         <dt>github</dt><dd><a href="https://github.com/fujix129">@fujix129</a></dd>
       </dl>
-      <p>まだまだペーペーのプログラマ見習い。</p>
+      <p>意識高くはない系プログラマ</p>
       <p>飼い猫のきなこさんのお世話の為に生きてる。</p>
     </div>
 
@@ -24,10 +24,7 @@
 
     <div class="MenuContainer">
       <h2>月毎の。</h2>
-    </div>
-
-    <div class="MenuContainer">
-      <h2>カテゴリ毎の。</h2>
+      <p>そのうち</p>
     </div>
 
     <div class="MenuContainer">
