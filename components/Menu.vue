@@ -75,7 +75,7 @@ dl {
 dt {
   float:left;
   clear:left;
-  width:22%;
+  width:20%;
 }
 dd {
   float:left;
@@ -94,9 +94,8 @@ p {
 }
 
 .MenuContainer {
-  padding: 10%;
-  margin: 10px 10px 10px 10px;
   padding: 10px;
+  margin: 10px 10px 10px 10px;
   border: solid 1px #cccccc;
   border-radius: 10px;
 }
