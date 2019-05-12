@@ -2,10 +2,10 @@
   <div>
 
     <div class="MenuContainer">
-      <h2>プロフィール</h2>
-        <img src="~/assets/kinaco.png" class="logo" />
-      <dl>
-        <dt>なまえ</dt><dd>fujix(hyoufk)</dd>
+      <h2>ぷろふぃーる。</h2>
+      <img src="~/assets/kinaco.png" class="logo" />
+      <dl class="Profileitems">
+        <dt>Name</dt><dd>fujix(hyoufk)</dd>
         <dt>twitter</dt><dd><a href="https://twitter.com/hyoufk">@hyoufk</a></dd>
         <dt>github</dt><dd><a href="https://github.com/fujix129">@fujix129</a></dd>
       </dl>
@@ -75,24 +75,27 @@ dl {
 dt {
   float:left;
   clear:left;
-  width:20%;
+  width:22%;
 }
 dd {
   float:left;
   width:65%;
 }
 p {
+  margin: 0;
   font-size: 12px;
 }
 
 .logo {
   width: 80%;
   border-radius: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .MenuContainer {
-  width: 80%;
-  margin: 10% 10% 10% 10%;
+  padding: 10%;
+  margin: 10px 10px 10px 10px;
   padding: 10px;
   border: solid 1px #cccccc;
   border-radius: 10px;

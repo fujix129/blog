@@ -37,16 +37,16 @@ html {
 .body {
   padding: 30px;
   display: flex;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .container {
-  margin: 30px;
-  width: 740px;
+  width: 70%;
 }
 
 .menu {
-  width: 400px;
+  width: 30%;
+  min-width: 310px;
 }
 </style>

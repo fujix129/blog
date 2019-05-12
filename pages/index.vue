@@ -1,6 +1,6 @@
 <template>
-  <section class="container">
-    <div>
+  <section class="top_container">
+    <div class="top">
       <h1 class="title">
         トップページ
       </h1>
@@ -15,8 +15,12 @@
 </script>
 
 <style scoped>
-.container {
+.top_ontainer {
   text-align: center;
+}
+
+.top {
+  margin: 10px;
 }
 
 .title {
