@@ -4,9 +4,9 @@
       <h1 class="title">
         トップページ
       </h1>
-      <h2 class="subtitle">
-        現在工事中です
-      </h2>
+      <p>
+        ブログのトップページってよく最新の日記とか出してるけど出せる程日記書いてないや
+      </p>
     </div>
   </section>
 </template>

@@ -16,7 +16,7 @@
     <div class="MenuContainer">
       <h2>最近の。</h2>
       <ul id="example-1">
-        <li v-for="n in menuPageCounts()">
+        <li v-for="n in menuPageCount()">
           <nuxt-link :to="{path:`/blogs/${menuPages[n - 1].url_title}`}">{{ menuPages[n - 1].title }}</nuxt-link>
         </li>
       </ul>
@@ -24,7 +24,7 @@
 
     <div class="MenuContainer">
       <h2>月毎の。</h2>
-      <p>そのうち</p>
+      <p>そのうち実装したいなぁ</p>
     </div>
 
     <div class="MenuContainer">
@@ -53,7 +53,7 @@ export default {
     getInfo() {
       this.$store.dispatch('pages/getAll', this.$route.params.page)
     },
-    menuPageCounts() {
+    menuPageCount() {
       if (this.$store.getters['pages/menuPages'].length >= 5) {
         return 5
       }
